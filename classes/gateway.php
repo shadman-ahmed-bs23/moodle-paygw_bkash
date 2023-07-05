@@ -61,10 +61,6 @@ class gateway extends \core_payment\gateway {
         $mform->setType('appsecret', PARAM_TEXT);
         $mform->addHelpButton('appsecret', 'appsecret', 'paygw_bkash');
 
-        $mform->addElement('text', 'frontendurl', get_string('frontendurl', 'paygw_bkash'));
-        $mform->setType('frontendurl', PARAM_TEXT);
-        $mform->addHelpButton('frontendurl', 'frontendurl', 'paygw_bkash');
-
         $paymentmodes = array(
             'sandbox' => get_string('paymentmodes:sandbox', 'paygw_bkash'),
             'live' => get_string('paymentmodes:live', 'paygw_bkash'),
